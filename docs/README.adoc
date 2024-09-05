@@ -18,14 +18,14 @@ O aplicativo possui 3 componentes:
 - Back-end: Ruby on Rails (e alguns crons em python e bash!)
 - Database: MySQL
 
-[mermaid,target="mermaid-flowchart"]
---
+[source,mermaid]
+....
 flowchart TB
 subgraph CentOS6
 front-->back
 back --> banco
 end
---
+....
 
 [source,mermaid]
 ....
@@ -36,15 +36,6 @@ sequenceDiagram
     Bob-->>Alice: Great!
 ....
 
-
-[mermaid]
-....
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Great!
-....
 
 
 Tudo roda dentro de apenas um único servidor, num provedor de VPS não muito confiável.
