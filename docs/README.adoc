@@ -27,7 +27,24 @@ back --> banco
 end
 --
 
+[source,mermaid]
+....
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>Bob: Hello Bob, how are you?
+    Bob-->>Alice: Great!
+....
 
+
+[mermaid]
+....
+sequenceDiagram
+    participant Alice
+    participant Bob
+    Alice->>Bob: Hello Bob, how are you?
+    Bob-->>Alice: Great!
+....
 
 
 Tudo roda dentro de apenas um único servidor, num provedor de VPS não muito confiável.
