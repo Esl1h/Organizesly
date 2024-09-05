@@ -1,3 +1,7 @@
+## Desafio Tecnico
+
+### Sobre o App:
+
 Um pequeno time de apenas três desenvolvedores apaixonados por tecnologia criaram o web app Organizeasly, um aplicativo revolucionário voltado para facilitar a organização de eventos.
 
 A princípio era somente um hobby para conectar fornecedores e prestadores de serviço a quem queria realizar algum evento, dando match inclusive com a previsão do tempo e evitando concorrência do público com outros eventos.
@@ -6,51 +10,78 @@ Com uma interface intuitiva, 100% web e um algoritmo de recomendação de locais
 
 O Organizeasly recebeu um aporte financeiro, e com isto a necessidade de reestruturá-lo totalmente para comportar o crescimento exponencial.
 
-O aplicativo possui 3 componentes: 
-Front-end web: Jquery, JavaScript, html, css, Ruby on Rails (Opal lib);
-Back-end: Ruby on Rails (e alguns crons em python e bash!)
-Database: MySQL
+#### Situação atual:
+
+O aplicativo possui 3 componentes:
+
+- Front-end web: Jquery, JavaScript, html, css, Ruby on Rails (Opal lib);
+- Back-end: Ruby on Rails (e alguns crons em python e bash!)
+- Database: MySQL
+
+[mermaid,target="mermaid-flowchart"]
+--
+flowchart TB
+subgraph CentOS6
+front-->back
+back --> banco
+end
+--
+
+
+
 
 Tudo roda dentro de apenas um único servidor, num provedor de VPS não muito confiável.
+
 Deploy é via SSH ou FTP direto no servidor Linux, um CentOS 6.
+
 O código está no github.
 
 E já está dando um bom lucro!
 
 Os investidores querem que num futuro seja migrado para frameworks mais famosos, como vue.js, node.js e possuem um grande roadmap de melhorias, inovações e novas contratações de desenvolvedores.... 
 
-Mas antes, precisamos organizar tudo!
+*Mas antes, precisamos organizar tudo!*
+
+### Desafio:
 
 Você como DevOps, SRE, Sysadmin (esqueci outro nome? rsrss), deverá propor uma nova estrutura para o app dentro da AWS!
 
-Para seguir o desafio:
+#### Para seguir o desafio:
 
-1 - crie uma branch deste repositório;
-2 - no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
-3 - quando finalizar, crie uma Pull Request para a branch Main.
+- crie uma branch deste repositório;
+- no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
+- quando finalizar, crie uma Pull Request para a branch Main.
 
 
-O que fazer:
+#### O que fazer:
 Desenhe no excalidraw.io ou draw.io qual a sua proposta de reestruturação do AppFast;
+
 Crie a infraestrutura do aplicativo utilizando terraform; (opcional para candidatos juniores)
 
 
-Tenha em mente:
+
+#### Tenha em mente:
 framework well-architected
+
 alta disponibilidade e resiliência
+
 segurança
 
 
-Opcional:
+#### Opcional:
 Após propor a infraestrutura do aplicativo, sinta-se livre para complementar no desenho (ou caso queira, no terraform) com os seguintes itens:
-processo de CI/CD;
-estrutura de backups;
-monitoramento;
-recuperação de desastre;
+
+- processo de CI/CD;
+- estrutura de backups;
+- monitoramento;
+- recuperação de desastre;
+
 
 
 Este desafio não possui resposta certa, ele é aplicado a candidatos para vaga de Junior, Pleno e Sênior.
+
 Este desafio não é imperativo nem eliminatório durante o processo seletivo, mas irá direcionar o bate-papo na entrevista técnica.
+
 
 
 organize easily = Organizeasly (Organize facilmente)... Sim, terão que mudar o nome tbm ;-) 
