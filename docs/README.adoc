@@ -46,17 +46,18 @@ Os investidores querem que num futuro seja migrado para frameworks mais famosos,
 
 Você como DevOps, SRE, Sysadmin (esqueci outro nome? rsrss), deverá propor uma nova estrutura para o app dentro da AWS!
 
-* Para seguir o desafio:
-
-    . crie uma branch deste repositório;
-    . no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
-    . quando finalizar, crie uma Pull Request para a branch Main.
 
 
-* O que fazer:
+* [ ] crie uma branch deste repositório;
 
-    ** Desenhe no http://excalidraw.io/[excalidraw^] ou http://draw.io/[drawio^] qual a sua proposta de reestruturação do Organizeasly(C);
-    ** Crie a infraestrutura do aplicativo utilizando terraform; (opcional para candidatos juniores)
+* [ ]  no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
+
+* [ ] Desenhe no http://excalidraw.io/[excalidraw^], http://draw.io/[drawio^] ou https://www.cloudcraft.co/[Cloudcraft^] qual a sua proposta de reestruturação do app;
+
+* [ ] Crie a infraestrutura do aplicativo utilizando terraform; (opcional para candidatos juniores)
+
+* [ ] quando finalizar, crie uma Pull Request para a branch Main.
+
 
 
 
