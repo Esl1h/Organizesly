@@ -1,44 +1,36 @@
-## Desafio Tecnico
+= Desafio Tecnico
 
-### Sobre o App:
+== Sobre o App:
 
-Um pequeno time de apenas três desenvolvedores apaixonados por tecnologia criaram o web app Organizeasly, um aplicativo revolucionário voltado para facilitar a organização de eventos.
+Um pequeno time de apenas três desenvolvedores apaixonados por tecnologia criaram o web app Organizeasly(C), um aplicativo revolucionário voltado para facilitar a organização de eventos.
 
 A princípio era somente um hobby para conectar fornecedores e prestadores de serviço a quem queria realizar algum evento, dando match inclusive com a previsão do tempo e evitando concorrência do público com outros eventos.
 
-Com uma interface intuitiva, 100% web e um algoritmo de recomendação de locais e serviços de alta precisão usando APIs de terceiros, o Organizeasly começou a ganhar popularidade e atraiu o interesse de uma grande empresa que organiza eventos, conferências e feiras.
+Com uma interface intuitiva, 100% web e um algoritmo de recomendação de locais e serviços de alta precisão usando APIs de terceiros, o Organizeasly(C) começou a ganhar popularidade e atraiu o interesse de uma grande empresa que organiza eventos, conferências e feiras.
 
-O Organizeasly recebeu um aporte financeiro, e com isto a necessidade de reestruturá-lo totalmente para comportar o crescimento exponencial.
+O Organizeasly(C) recebeu um aporte financeiro, e com isto a necessidade de reestruturá-lo totalmente para comportar o crescimento exponencial.
 
-#### Situação atual:
+=== Situação atual:
 
 O aplicativo possui 3 componentes:
 
-- Front-end web: Jquery, JavaScript, html, css, Ruby on Rails (Opal lib);
-- Back-end: Ruby on Rails (e alguns crons em python e bash!)
-- Database: MySQL
+- _Front-end web_: +Jquery, JavaScript, html, css, Ruby on Rails (Opal lib)+;
+- _Back-end_: +Ruby on Rails (e alguns crons em python e bash!)+;
+- _Database_: +MySQL+
 
 [source,mermaid]
 ....
 flowchart TB
 subgraph CentOS6
 front-->back
-back --> banco
+back --> database
 end
 ....
 
-[source,mermaid]
-....
-sequenceDiagram
-    participant Alice
-    participant Bob
-    Alice->>Bob: Hello Bob, how are you?
-    Bob-->>Alice: Great!
-....
+`Muito *simples* né?`
 
 
-
-Tudo roda dentro de apenas um único servidor, num provedor de VPS não muito confiável.
+Tudo roda dentro de apenas um único servidor, sendo tratado com muito cuidado, como um verdadeiro Pet, dentro de num provedor de VPS não muito confiável.
 
 Deploy é via SSH ou FTP direto no servidor Linux, um CentOS 6.
 
@@ -50,39 +42,41 @@ Os investidores querem que num futuro seja migrado para frameworks mais famosos,
 
 *Mas antes, precisamos organizar tudo!*
 
-### Desafio:
+=== Desafio:
 
 Você como DevOps, SRE, Sysadmin (esqueci outro nome? rsrss), deverá propor uma nova estrutura para o app dentro da AWS!
 
-#### Para seguir o desafio:
+* Para seguir o desafio:
 
-- crie uma branch deste repositório;
-- no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
-- quando finalizar, crie uma Pull Request para a branch Main.
-
-
-#### O que fazer:
-Desenhe no excalidraw.io ou draw.io qual a sua proposta de reestruturação do AppFast;
-
-Crie a infraestrutura do aplicativo utilizando terraform; (opcional para candidatos juniores)
+    . crie uma branch deste repositório;
+    . no diretório “proposta” crie uma pasta com seu nome e faça o commit da sua atividade nela;
+    . quando finalizar, crie uma Pull Request para a branch Main.
 
 
+* O que fazer:
 
-#### Tenha em mente:
-framework well-architected
-
-alta disponibilidade e resiliência
-
-segurança
+    ** Desenhe no http://excalidraw.io/[excalidraw^] ou http://draw.io/[drawio^] qual a sua proposta de reestruturação do Organizeasly(C);
+    ** Crie a infraestrutura do aplicativo utilizando terraform; (opcional para candidatos juniores)
 
 
-#### Opcional:
-Após propor a infraestrutura do aplicativo, sinta-se livre para complementar no desenho (ou caso queira, no terraform) com os seguintes itens:
 
-- processo de CI/CD;
-- estrutura de backups;
-- monitoramento;
-- recuperação de desastre;
+.Tenha em mente:
+[IMPORTANT]
+===============================
+- framework well-architected
+- alta disponibilidade e resiliência
+- segurança
+===============================
+
+
+
+==== Opcional:
+* Após propor a infraestrutura do aplicativo, sinta-se livre para complementar no desenho (ou caso queira, no terraform) com os seguintes itens:
+
+    - processo de CI/CD;
+    - estrutura de backups;
+    - monitoramento;
+    - recuperação de desastre;
 
 
 
@@ -92,4 +86,4 @@ Este desafio não é imperativo nem eliminatório durante o processo seletivo, m
 
 
 
-organize easily = Organizeasly (Organize facilmente)... Sim, terão que mudar o nome tbm ;-) 
+organize easily = Organizeasly(C) (Organize facilmente)... Sim, terão que mudar o nome tbm ;-)
